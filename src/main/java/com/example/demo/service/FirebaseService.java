@@ -144,7 +144,7 @@ public class FirebaseService {
                         ApiFuture<WriteResult> collectionsAPIFutureOrder = dbFirestore.collection("orders").document().set(order); //customer2.getName()
                         return "order made: " + collectionsAPIFutureOrder.get().getUpdateTime().toString();
                     }catch (NullPointerException e){
-                       System.out.println("nalpointa "+e);
+                     //  System.out.println("nalpointa "+e);
                        return "order made: ";
                     }
 
